@@ -1,0 +1,47 @@
+{
+	"size":"1024",
+
+	"layers":[
+		{	
+			"name":"background",
+			"type":"background",
+			"transparency":"0.0",
+			"rgb":[0,0,0]
+		},
+
+		{
+			"name":"many stars",
+			"type":"stars",
+			"transparency":"0.0",
+			"density":"0.99",
+			"rgb_max":[100,100,100],
+			"rgb_min":[0,0,0],
+			"large_perc":"0.25"
+		},
+
+		{
+			"name":"temp",
+			"type":"temp",
+			"transparency":"0.5",
+			"rgb_max":[50,0,50],
+			"rgb_min":[0,0,0],
+			"freq":"1"
+
+		},
+
+		{
+			"name":"many stars",
+			"type":"masked_stars",
+			"transparency":"0.0",
+			"density":"0.99",
+			"rgb_max":[255,255,255],
+			"rgb_min":[0,0,0],
+			"large_perc":"0.5",
+			"reference":"temp",
+			"ref vector":[255,255,255],
+			"test":"0.01"
+		}
+
+
+		]
+}
